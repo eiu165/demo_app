@@ -7,8 +7,41 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+	
+	
+	    <div class="page">
+	        <header>
+	            <div id="title">
+	              <h1>Welcome to Ruby on Rails!</h1>
+	            </div>
+	            <div id="logindisplay">
+	              [ <a href="/Account/LogOn">Log On</a> ] 
+	            </div>
+	            <nav>
+	                <ul id="menu">
+	                    <li><a href="/microposts">Microposts</a></li>
+	                    <li><a href="/users">User</a></li> 
+	                    <li><a href="/pages/about">Pages</a></li>
+	                </ul>
+	            </nav>
+	        </header>
+	        <section id="main">
+
+	            <div id="flash" style="display: none"></div>
+
+	
+	
 
 <%= yield %>
+
+
+    </section>
+    <footer>
+    </footer>
+</div>
+
+
+
 
 </body>
 </html>
