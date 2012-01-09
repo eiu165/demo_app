@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DemoApp</title>
+  <title>Ruby on Rails Tutorial Sample App | <%= @title %></title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
@@ -12,33 +12,29 @@
 	    <div class="page">
 	        <header>
 	            <div id="title">
-	              <h1>Welcome to Ruby on Rails!</h1>
+	              <h1>Ruby on Rails!</h1>
 	            </div>
 	            <div id="logindisplay">
 	              [ <a href="/Account/LogOn">Log On</a> ] 
 	            </div>
 	            <nav>
 	                <ul id="menu">
-	                    <li><a href="/microposts">Microposts</a></li>
+	                    <li><a href="/microposts">Micropost</a></li>
 	                    <li><a href="/users">User</a></li> 
-	                    <li><a href="/pages/about">Pages</a></li>
+	                    <li><a href="/pages/about">Page</a></li>
 	                </ul>
 	            </nav>
 	        </header>
 	        <section id="main">
+ 
 
-	            <div id="flash" style="display: none"></div>
-
-	
-	
-
-<%= yield %>
+				<%= yield %>
 
 
-    </section>
-    <footer>
-    </footer>
-</div>
+		    </section>
+   	 		<footer>
+	    	</footer>
+	</div>
 
 
 
